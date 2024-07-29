@@ -114,12 +114,7 @@ Failure (400 Bad Request or 500 Internal Server Error):
 - Method: POST
 - Body: (JSON with username and password)
 
-- Protected Endpoint Request:
 
-- URL: http://127.0.0.1:5000/protected 
-- Method: GET or POST
-- Headers:
-- Authorization: Bearer <your_jwt_token>
 
 ## Error Handling
 * Invalid Credentials: Returns a 401 Unauthorized status code with a message Invalid credentials.
