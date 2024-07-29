@@ -16,7 +16,7 @@ This is a Flask-based RESTful API for user authentication, including login, regi
 ## 1- clone the repository 
 
 - git clone https://github.com/SaaaRoO/user_authentication 
-- cd user_authentication
+
 
 ## 2- Install required packages
 pip install -r requirements.txt
