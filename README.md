@@ -15,8 +15,8 @@ This is a Flask-based RESTful API for user authentication, including login, regi
 ## Steps
 ## 1- clone the repository 
 
-git clone https://github.com/SaaaRoO/user_authentication /n
-cd user_authentication
+- git clone https://github.com/SaaaRoO/user_authentication 
+- cd user_authentication
 
 ## 2- Install required packages
 pip install -r requirements.txt
@@ -31,9 +31,11 @@ pip install -r requirements.txt
 
 ## 4- Connect to PostgreSQL and create the database
 
-psql -U postgres
+- psql -U postgres
  
  - Inside the psql command-line interface:
+
+ - 
  CREATE DATABASE auth_db;
 \c auth_db
 CREATE TABLE users (
@@ -98,32 +100,32 @@ Failure (400 Bad Request or 500 Internal Server Error):
 ## Testing the API
 * Login Request:
 
-URL: http://127.0.0.1:5000/login
-Method: POST
-Body: (JSON with username and password)
+- URL: http://127.0.0.1:5000/login
+- Method: POST
+- Body: (JSON with username and password)
 * Headers:
-Authorization: Bearer <your_jwt_token>
+- Authorization: Bearer <your_jwt_token>
 
 - Register Request:
 
-URL: http://127.0.0.1:5000/register
-Method: POST
-Body: (JSON with username and password)
+- URL: http://127.0.0.1:5000/register
+- Method: POST
+- Body: (JSON with username and password)
 
 - Protected Endpoint Request:
 
-URL: http://127.0.0.1:5000/protected 
-Method: GET or POST
-Headers:
-Authorization: Bearer <your_jwt_token>
+- URL: http://127.0.0.1:5000/protected 
+- Method: GET or POST
+- Headers:
+- Authorization: Bearer <your_jwt_token>
 
 ## Error Handling
 * Invalid Credentials: Returns a 401 Unauthorized status code with a message Invalid credentials.
 * Missing Parameters: Returns a 400 Bad Request status code with a message Missing parameters.
 * Server Errors: Returns a 500 Internal Server Error status code with a message Registration failed.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
+* This project is licensed under the MIT License - see the LICENSE file for details.
 
 
 
