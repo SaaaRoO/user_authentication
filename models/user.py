@@ -6,6 +6,14 @@ class User:
     User class for handling user data operations.
     """
     def __init__(self, user_id, username, password):
+        """
+        Initialize a User instance.
+
+        Parameters:
+        - user_id: Unique identifier for the user
+        - username: Username of the user
+        - password: Password of the user (hashed)
+        """
         self.user_id = user_id  # User ID attribute
         self.username = username  # Username attribute
         self.password = password  # Password attribute (hashed)
@@ -24,7 +32,8 @@ class User:
         query = "SELECT * FROM users WHERE username = %s"  # SQL query to find user by username
         result = query_db(query, (username,), one=True)  # Execute query with parameter
         if result:
-            return cls(result['user_id'], result['username'], result['password'])  # Return User object
+            # Create and return a User instance with the retrieved data
+            return cls(result['user_id'], result['username'], result['password'])
         return None
 
     @classmethod
