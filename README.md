@@ -15,7 +15,7 @@ This is a Flask-based RESTful API for user authentication, including login, regi
 ## Steps
 ## clone the repository 
 
-git clone https://github.com/SaaaRoO/user_authentication
+git clone https://github.com/SaaaRoO/user_authentication /n
 cd user_authentication
 
 ## Install required packages
@@ -112,7 +112,7 @@ Body: (JSON with username and password)
 
 - Protected Endpoint Request:
 
-URL: http://127.0.0.1:5000/protected (Replace with your protected endpoint URL)
+URL: http://127.0.0.1:5000/protected 
 Method: GET or POST
 Headers:
 Authorization: Bearer <your_jwt_token>
