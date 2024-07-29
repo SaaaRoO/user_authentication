@@ -2,34 +2,34 @@
 
 This is a Flask-based RESTful API for user authentication, including login, registration, and token management. The API uses PostgreSQL for database storage and JWT for token-based authentication.
 
-##Table of Contents: ##
+## Table of Contents: 
 
-1.Installation
-2.Configuration 
-3.Endpoints  
-4.Testing the API  
-5.Error Handling  
-6.License  
+1. Installation
+2. Configuration 
+3. Endpoints  
+4. Testing the API  
+5. Error Handling  
+6. License  
 
 
 ## Steps
-## clone the repository 
+## 1- clone the repository 
 
 git clone https://github.com/SaaaRoO/user_authentication /n
 cd user_authentication
 
-## Install required packages
+## 2- Install required packages
 pip install -r requirements.txt
  
- ## Set up environment variables
+ ## 3-Set up environment variables
 
- export SECRET_KEY=b131b7d8ece4c399d3949da5215a4da1b726cdcb3d9b2323baceec95863d39c1
- export DATABASE_URI=postgresql://postgres:your_password@localhost:5432/auth_db
- export JWT_SECRET_KEY=my_jwt_secret_key
+ * export SECRET_KEY=b131b7d8ece4c399d3949da5215a4da1b726cdcb3d9b2323baceec95863d39c1
+ * export DATABASE_URI=postgresql://postgres:your_password@localhost:5432/auth_db
+ * export JWT_SECRET_KEY=my_jwt_secret_key
 
  Set up the database:
 
-## Connect to PostgreSQL and create the database
+## 4- Connect to PostgreSQL and create the database
 
 psql -U postgres
  
