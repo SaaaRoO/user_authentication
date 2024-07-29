@@ -53,14 +53,16 @@ CREATE TABLE users (
 ## Endpoints
 
 ' POST /login '
-Description: Logs in a user and returns a JWT token.
+- Description: Logs in a user and returns a JWT token.
 
 * Request Body:
+* 
 {
   "username": "testuser",
   "password": "testpassword"
 }
 
+* 
 * Response :
 {
   "user_id": 1
