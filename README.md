@@ -13,15 +13,20 @@ This is a Flask-based RESTful API for user authentication, including login, regi
 
 
 ## Steps
-## 1- clone the repository 
+
+## 1. Project Structure
+![Screenshot 2024-07-29 235210](https://github.com/user-attachments/assets/f7b8ff36-9d04-4059-ab2b-af76e1385086)
+
+
+## 2. clone the repository 
 
 - git clone https://github.com/SaaaRoO/user_authentication 
 
 
-## 2- Install required packages
+## 3. Install required packages
 pip install -r requirements.txt
  
- ## 3-Set up environment variables
+ ## 4. Set up environment variables
 
  * export SECRET_KEY=b131b7d8ece4c399d3949da5215a4da1b726cdcb3d9b2323baceec95863d39c1
  * export DATABASE_URI=postgresql://postgres:your_password@localhost:5432/auth_db
@@ -29,7 +34,7 @@ pip install -r requirements.txt
 
  Set up the database:
 
-## 4- Connect to PostgreSQL and create the database
+## 5. Connect to PostgreSQL and create the database
 
 - psql -U postgres
  
@@ -54,6 +59,9 @@ CREATE TABLE users (
 
 ' POST /login '
 - Description: Logs in a user and returns a JWT token.
+![Screenshot 2024-07-30 004514](https://github.com/user-attachments/assets/1b38d488-55ae-491c-9e4e-a136bf7ce3e9)
+
+
 
 * Request Body:
 * 
@@ -76,6 +84,9 @@ Authorization: Bearer <your_jwt_token>
  {
   "message": "Invalid credentials"   // or "Missing parameters"
 }
+![Screenshot 2024-07-30 003820](https://github.com/user-attachments/assets/0232be2d-ce41-44c8-9df2-4513646b30d4)
+
+
 
 ' POST /register ' 
 Description: Registers a new user.
@@ -93,6 +104,9 @@ Success (201 Created):
   "message": "User registered successfully",
   "user_id": 1
 }
+![Screenshot 2024-07-30 004323](https://github.com/user-attachments/assets/0fa0acb8-3aff-4d26-a44a-50aa8ec766e5)
+
+
 
 Failure (400 Bad Request or 500 Internal Server Error):
 {
