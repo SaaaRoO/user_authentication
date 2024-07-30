@@ -4,12 +4,15 @@ This is a Flask-based RESTful API for user authentication, including login, regi
 
 ## Table of Contents: 
 
-1. Installation
-2. Configuration 
-3. Endpoints  
-4. Testing the API  
-5. Error Handling  
-6. License  
+1.	Project Structure.
+2.	 clone the repository 
+3.	Install Required Python Packages.+
+4.	Configuration.
+5.	Create The Database.
+6.	Run The Application.
+7.	API Endpoint.
+8.	Error Handling.
+   
 
 
 ## Steps
@@ -26,7 +29,7 @@ This is a Flask-based RESTful API for user authentication, including login, regi
 ## 3. Install required packages
 pip install -r requirements.txt
  
- ## 4. Set up environment variables
+ ## 4. Configuration
 
  * export SECRET_KEY=b131b7d8ece4c399d3949da5215a4da1b726cdcb3d9b2323baceec95863d39c1
  * export DATABASE_URI=postgresql://postgres:your_password@localhost:5432/auth_db
@@ -146,6 +149,25 @@ Failure (400 Bad Request or 500 Internal Server Error):
 * Invalid Credentials: Returns a 401 Unauthorized status code with a message Invalid credentials.
 * Missing Parameters: Returns a 400 Bad Request status code with a message Missing parameters.
 * Server Errors: Returns a 500 Internal Server Error status code with a message Registration failed.
+
+* Testing Invalid Credentials:
+
+![image](https://github.com/user-attachments/assets/2fc22d1d-b5cb-44a7-9468-ac2cde094263)
+
+* Testing Missing Parameters:
+
+  ![image](https://github.com/user-attachments/assets/58c21e9a-ff12-46ed-8f13-0852730374f5)
+
+  * Testing Server Errors:
+ 
+    ![image](https://github.com/user-attachments/assets/6a11cf64-f61c-4de5-80a5-593864d85974)
+
+    * Testing Expired or Invalid Tokens:
+   
+      ![image](https://github.com/user-attachments/assets/8e52325a-e26d-4739-86a8-80a91b07282d)
+
+
+
 
 ## License
 * This project is licensed under the MIT License - see the LICENSE file for details.
