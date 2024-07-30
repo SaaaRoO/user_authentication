@@ -37,10 +37,12 @@ pip install -r requirements.txt
 ## 5. Connect to PostgreSQL and create the database
 
 - psql -U postgres
+  
  
  - Inside the psql command-line interface:
+![Screenshot 2024-07-29 231059](https://github.com/user-attachments/assets/1e44b188-3d97-4cca-8e16-5f7d31878045)
 
- - 
+   
  CREATE DATABASE auth_db;
 \c auth_db
 CREATE TABLE users (
@@ -48,6 +50,9 @@ CREATE TABLE users (
     username VARCHAR(50) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL
 );
+![Screenshot 2024-07-29 231335](https://github.com/user-attachments/assets/292ec6ae-6ace-4443-be65-f4a88ca48df6)
+
+
  Configuration
 - The configuration for the Flask application is managed via environment variables. Update these variables to match your setup:
 
