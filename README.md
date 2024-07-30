@@ -67,8 +67,6 @@ CREATE TABLE users (
 
 ' POST /login '
 - Description: Logs in a user and returns a JWT token.
-![Screenshot 2024-07-30 004514](https://github.com/user-attachments/assets/1b38d488-55ae-491c-9e4e-a136bf7ce3e9)
-
 
 
 * Request Body:
@@ -78,7 +76,7 @@ CREATE TABLE users (
   "password": "testpassword"
 }
 
-* 
+  
 * Response :
 {
   "user_id": 1
@@ -86,12 +84,17 @@ CREATE TABLE users (
  
 * Header:
 Authorization: Bearer <your_jwt_token>
+
+![Screenshot 2024-07-30 004514](https://github.com/user-attachments/assets/1b38d488-55ae-491c-9e4e-a136bf7ce3e9)
+
+
  
 * Failure (400 Bad Request or 401 Unauthorized):
 
  {
   "message": "Invalid credentials"   // or "Missing parameters"
 }
+
 ![Screenshot 2024-07-30 003820](https://github.com/user-attachments/assets/0232be2d-ce41-44c8-9df2-4513646b30d4)
 
 
@@ -112,6 +115,7 @@ Success (201 Created):
   "message": "User registered successfully",
   "user_id": 1
 }
+
 ![Screenshot 2024-07-30 004323](https://github.com/user-attachments/assets/0fa0acb8-3aff-4d26-a44a-50aa8ec766e5)
 
 
